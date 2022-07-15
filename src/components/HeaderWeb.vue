@@ -27,12 +27,11 @@ export default {
 <style lang="scss" scoped>
   #header{
     background-color: #fff;
-    height: 200px;
   }
 
   img{
     width: 80px;
-    padding: 10px;
+    padding: 15px 0;
   }
 
   ul{
@@ -46,12 +45,15 @@ export default {
     font-size: 11px;
     font-weight: bold;
     color: #58534d;
+    cursor: pointer;
 
     &.active{
       color: #0282f9;
       border-bottom: 3px solid #0282f9;
     }
-  }
-  
 
+    &:hover{
+      background-color: #f1f8ff;
+    }
+  }
 </style>
