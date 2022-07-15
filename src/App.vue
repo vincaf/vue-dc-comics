@@ -29,4 +29,9 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  .container-content{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 </style>
