@@ -2,7 +2,7 @@
   <div>
     <div id="main">
       <div class="container-content">
-        <h4 class="text-white py-5 fw-bold mb-0">--> Content goes here</h4> 
+        <h5 class="text-white py-5 fw-bold mb-0">--> Content goes here</h5> 
       </div>
     </div>
     <div id="bluebar">
