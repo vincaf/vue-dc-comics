@@ -30,7 +30,7 @@ export default {
   }
 
   img{
-    width: 80px;
+    width: 70px;
     padding: 15px 0;
   }
 
