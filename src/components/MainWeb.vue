@@ -7,10 +7,10 @@
 
       <div class="container-content mt-5">
         <div class="d-flex flex-wrap px-3 mb-3">
-          <div class="comics-container" v-for="(comic, index) in comics" :key="index">
-            <img :src="comic.thumb" :alt="comic.series">
-            <div class="title text-uppercase"> {{comic.series}} </div>
-          </div>
+          <ComicsCard v-for="(comic, index) in comics" :key="index"
+          :imageUrl="comic.thumb"
+          :title="comic.series"
+          />
         </div>
         <div class="py-3">
           <div class="load">LOAD MORE</div>
@@ -46,12 +46,13 @@
 </template>
 
 <script>
+import ComicsCard from './ComicsCard.vue';
 
 export default {
 
   name: 'MainWeb',
   components: {
-    
+    ComicsCard,
   },
 
   data: function(){
@@ -157,23 +158,6 @@ export default {
 
   #main{
     background-color: #1c1c1c;
-  }
-
-  .comics-container{
-    margin: 10px;
-    width: calc((100% / 6) - 20px);
-
-    img{
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .title{
-      color: #fff;
-      margin-top: 5px;
-      font-size: 12px;
-    }
   }
 
   .load{
