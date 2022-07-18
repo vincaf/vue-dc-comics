@@ -3,46 +3,33 @@
     <div id="navbar_footer">
       <div class="container-content d-flex justify-content-between">
         <div class="list">
-          <h4>DC COMICS</h4>
-          <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>TV</li>
-            <li>Games</li>
-            <li>Videos</li>
-            <li>News</li>
-          </ul>
+          <div>
+            <h4>DC COMICS</h4>
+            <ul>
+              <li v-for="(link, index) in dcComicsList" :key="index">{{link.name}}</li>
+            </ul>
+          </div>
 
-          <h4>SHOP</h4>
-          <ul>
-            <li>Shop DC</li>
-            <li>Shop DC Collectibles</li>
-          </ul>
+          <div>
+            <h4>SHOP</h4>
+            <ul>
+              <li v-for="(link, index) in shopList" :key="index">{{link.name}}</li>
+            </ul>
+          </div>
 
-          <h4>DC</h4>
-          <ul>
-            <li>Terms Of Use</li>
-            <li>Privacy policy</li>
-            <li>Ad Choices</li>
-            <li>Advertising</li>
-            <li>Jobs</li>
-            <li>Subscriptions</li>
-            <li>Talent Workshops</li>
-            <li>CPSC Certificates</li>
-            <li>Ratings</li>
-            <li>Shop Help</li>
-            <li>Contact Us</li>
-          </ul>
+          <div>
+            <h4>DC</h4>
+            <ul>
+              <li v-for="(link, index) in dcList" :key="index">{{link.name}}</li>
+            </ul>
+          </div>
 
-          <h4>SITES</h4>
-          <ul>
-            <li>DC</li>
-            <li>MAD Magazine</li>
-            <li>DC Kids</li>
-            <li>DC Universe</li>
-            <li>DC Power Visa</li>
-          </ul>
+          <div>
+            <h4>SITES</h4>
+            <ul>
+              <li v-for="(link, index) in sitesList" :key="index">{{link.name}}</li>
+            </ul>
+          </div>
         </div>
 
         <div>
@@ -72,7 +59,119 @@
 
 <script>
 export default {
-
+  name: 'ContentMain',
+  data: function() {
+    return {
+      dcComicsList: [
+        {
+          name: "Character", 
+          url: "#",
+        },
+        {
+          name: "Comics", 
+          url: "#",
+        },
+        {
+          name: "Movies", 
+          url: "#",
+        },
+        {
+          name: "TV", 
+          url: "#",
+        },
+        {
+          name: "Games", 
+          url: "#",
+        },
+        {
+          name: "Videos", 
+          url: "#",
+        },
+        {
+          name: "News", 
+          url: "#",
+        },
+      ],
+      shopList: [
+        {
+          name: "Shop DC", 
+          url: "#",
+        },
+        {
+          name: "Shop DC Collectibles", 
+          url: "#",
+        },
+      ],
+      dcList: [
+        {
+          name: "Terms Of Use", 
+          url: "#",
+        },
+        {
+          name: "Privacy policy (New)", 
+          url: "#",
+        },
+        {
+          name: "Ad Choices", 
+          url: "#",
+        },
+        {
+          name: "Advertising", 
+          url: "#",
+        },
+        {
+          name: "Jobs", 
+          url: "#",
+        },
+        {
+          name: "Subscriptions", 
+          url: "#",
+        },
+        {
+          name: "Talent Workshops", 
+          url: "#",
+        },
+        {
+          name: "CPSC Certificates", 
+          url: "#",
+        },
+        {
+          name: "Ratings", 
+          url: "#",
+        },
+        {
+          name: "Shop Help", 
+          url: "#",
+        },
+        {
+          name: "Contact Us", 
+          url: "#",
+        },
+      ],
+      sitesList: [
+        {
+          name: "DC", 
+          url: "#",
+        },
+        {
+          name: "MAD Magazine", 
+          url: "#",
+        },
+        {
+          name: "DC Kids", 
+          url: "#",
+        },
+        {
+          name: "DC Universe", 
+          url: "#",
+        },
+        {
+          name: "DC Power Visa", 
+          url: "#",
+        },
+      ]
+    }
+  }
 }
 </script>
 
