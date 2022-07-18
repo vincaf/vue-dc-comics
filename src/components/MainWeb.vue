@@ -1,6 +1,9 @@
 <template>
   <div>
     <div id="main">
+      <div class="jumbotron">
+        <div class="current-series">CURRENT SERIES</div>
+      </div>
       <div class="container-content">
         <h5 class="text-white py-5 fw-bold mb-0">--> Content goes here</h5> 
       </div>
@@ -39,6 +42,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .jumbotron{
+    width: 100%;
+    height: 320px;
+    background-image: url("../assets/img/jumbotron.jpg");
+    background-size: cover;
+    position: relative;
+
+    .current-series{
+      background-color: #0282f9;
+      color: #fff;
+      width: 165px;
+      padding: 10px;
+      font-weight: bold;
+      position: absolute;
+      top: 300px;
+      left: 260px;
+    }
+  }
+
   #main{
     background-color: #1c1c1c;
   }
