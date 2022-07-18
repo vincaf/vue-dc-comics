@@ -3,16 +3,7 @@
     <div class="d-flex justify-content-between align-items-center">
       <img src="../assets/img/dc-logo.png" alt="dc logo">
       <ul>
-        <li>CHARACTERS</li>
-        <li class="active">COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li v-for="(nav, index) in menuList" :key="index" :class="{'active' : nav.active}">{{nav.name}}</li>
       </ul>
     </div>
   </div>
@@ -20,7 +11,63 @@
 
 <script>
 export default {
-
+  name: 'HeaderWeb',
+  data: function (){
+    return {
+      menuList: [
+        {
+          name: 'Characters',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'Comics',
+          url: '#',
+          active: true,
+        },
+        {
+          name: 'Movies',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'TV',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'Games',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'Collectibles',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'Videos',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'Fans',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'News',
+          url: '#',
+          active: false,
+        },
+        {
+          name: 'Shop',
+          url: '#',
+          active: false,
+        },
+      ]
+    }
+  }
 }
 </script>
 
