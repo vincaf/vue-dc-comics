@@ -6,7 +6,7 @@
       </div>
     </div>
     <div id="bluebar">
-      <div class="container-content d-flex justify-content-around">
+      <div class="container-content d-flex justify-content-around py-5">
         <div>
           <img src="../assets/img/buy-comics-digital-comics.png" alt="DIGITAL COMICS">
           <span>DIGITAL COMICS</span>
@@ -48,9 +48,7 @@ export default {
     color: #fff;
 
     img{
-      // *** da rivalutare dimensioni ***
-      width: 40px;
-      padding: 40px 0;
+      height: 40px;
     }
 
     span{

@@ -178,7 +178,7 @@ export default {
 <style lang="scss" scoped>
   #navbar_footer{
     background-image: url("../assets/img/footer-bg.jpg");
-    height: 260px;
+    height: 265px;
     background-size: cover;
     overflow: hidden;
 
