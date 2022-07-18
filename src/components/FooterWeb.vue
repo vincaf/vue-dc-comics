@@ -44,6 +44,7 @@
             <li>DC Power Visa</li>
           </ul>
         </div>
+
         <div>
           <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
@@ -51,7 +52,20 @@
       </div>
     </div>
     <div id="low_footer">
+      <div class="container-content d-flex justify-content-between">
+        <div class="py-4">
+          <button>SIGN-UP NOW!</button>
+        </div>
 
+        <div class="d-flex py-4 align-items-center">
+          <div class="follow-us">FOLLOW US</div>
+          <div class="icon"><img src="../assets/img/footer-facebook.png" alt="facebook"></div>
+          <div class="icon"><img src="../assets/img/footer-twitter.png" alt="facebook"></div>
+          <div class="icon"><img src="../assets/img/footer-youtube.png" alt="facebook"></div>
+          <div class="icon"><img src="../assets/img/footer-pinterest.png" alt="facebook"></div>
+          <div class="icon"><img src="../assets/img/footer-periscope.png" alt="facebook"></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -68,9 +82,8 @@ export default {
     height: 260px;
     background-size: cover;
     overflow: hidden;
-  }
 
-  .list{
+    .list{
     max-width: 400px;
     display: flex;
     align-items: flex-start;
@@ -98,14 +111,32 @@ export default {
     }
   }
 
-  img{
+    img{
     height: 430px;
     position: relative;
     top: -90px;
+    }
   }
 
   #low_footer{
     background-color: #303030;
     height: 95px;
+
+    button{
+      border: 2px solid #0282f9;
+      background-color: #303030;
+      color: #fff;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .follow-us{
+      color: #0282f9;
+      font-weight: bold;
+    }
+
+    .icon{
+      margin-left: 15px;
+    }
   }
 </style>
